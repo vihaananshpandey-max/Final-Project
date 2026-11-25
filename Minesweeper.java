@@ -207,7 +207,7 @@ public class Minesweeper {
             System.out.print("Enter row then column (e.g. 1 2):");
             int pickRow = scanner.nextInt();
             int pickColumn = scanner.nextInt();
-            if (pickColumn < 1 || pickColumn < 9) {
+            if (pickColumn < 1 || pickColumn > 9) {
                 System.out.println("Invalid column. Please enter a column between 1 and 9.");
                 continue;
             }
